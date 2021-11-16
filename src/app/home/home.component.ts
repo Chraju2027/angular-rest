@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
     this.http.get<any>("https://cat-fact.herokuapp.com/facts").subscribe(
       res=>{
        this.data=res;
+       console.log(this.data);
 
       });
 
